@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NGSA Payroll System</title>
+<meta name="theme-color" content="#0b1118">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛡️%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="side">
+  <div class="logo">🛡️ <b>NGSA</b><small>PAYROLL SYSTEM</small></div>
+  <nav id="nav" aria-label="Menu chính"></nav>
+</aside>
+<div id="shade" onclick="document.body.classList.remove('nav')"></div>
+<div id="app">
+  <header>
+    <button class="btn ico" id="burger" aria-label="Mở menu">☰</button>
+    <span class="ttl">HỆ THỐNG QUẢN LÝ LƯƠNG — KPI — DOC — QUỸ</span>
+    <button class="btn" id="theme" aria-label="Đổi giao diện"></button>
+  </header>
+  <div id="demo" class="banner" hidden>🧪 DEMO DATA — KHÔNG PHẢI DỮ LIỆU THẬT</div>
+  <main id="view"></main>
+  <footer>⚠️ Dữ liệu được lưu trên thiết bị/trình duyệt hiện tại. Hãy thường xuyên Export Backup để tránh mất dữ liệu khi xóa trình duyệt hoặc đổi thiết bị.</footer>
+</div>
+<div id="modal" role="dialog" aria-modal="true"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="imp" accept=".json,application/json" hidden>
+<script src="app.js"></script>
+</body>
+</html>
